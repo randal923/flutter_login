@@ -362,7 +362,7 @@ class _AnimatedPasswordTextFormFieldState
               ),
           secondChild: widget.visibilityOffIcon ??
               const Icon(
-                Icons.abc_outlined,
+                Icons.visibility_off,
                 size: 25.0,
                 semanticLabel: 'hide password',
               ),
