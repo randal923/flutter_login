@@ -37,10 +37,10 @@ class TextFieldUtils {
       case LoginUserType.name:
         return userIcon ?? const Icon(FontAwesomeIcons.circleUser);
       case LoginUserType.phone:
-        return const Icon(FontAwesomeIcons.squarePhoneFlip);
+        return phoneIcon ?? const Icon(FontAwesomeIcons.squarePhoneFlip);
       case LoginUserType.email:
       default:
-        return const Icon(FontAwesomeIcons.squareEnvelope);
+        return emailIcon ?? const Icon(FontAwesomeIcons.squareEnvelope);
     }
   }
 
