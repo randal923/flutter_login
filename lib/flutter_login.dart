@@ -277,7 +277,6 @@ class FlutterLogin extends StatefulWidget {
     dynamic logo,
     this.messages,
     this.theme,
-    this.visibilityOnIcon,
     this.userValidator,
     this.passwordValidator,
     this.onSubmitAnimationCompleted,
@@ -342,8 +341,6 @@ class FlutterLogin extends StatefulWidget {
   /// shown in the demo gifs and use the colorsheme in the closest `Theme`
   /// widget
   final LoginTheme? theme;
-
-  final Icon? visibilityOnIcon;
 
   /// Email validating logic, Returns an error string to display if the input is
   /// invalid, or null otherwise
@@ -812,7 +809,7 @@ class _FlutterLoginState extends State<FlutterLogin>
                         phoneIcon: widget.theme?.phoneIcon,
                         userIcon: widget.theme?.userIcon,
                         visibilityOffIcon: widget.theme?.visibilityOffIcon,
-                        visibilityOnIcon: widget.visibilityOnIcon,
+                        visibilityOnIcon: widget.theme?.visibilityOnIcon,
                         userType: widget.userType,
                         padding: EdgeInsets.only(top: cardTopPosition),
                         loadingController: _loadingController,
