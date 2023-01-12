@@ -354,6 +354,7 @@ class _LoginCardState extends State<_LoginCard> with TickerProviderStateMixin {
       loadingController: widget.loadingController,
       interval: _passTextFieldLoadingAnimationInterval,
       visibilityOnIcon: widget.visibilityOnIcon,
+      prefixIcon: widget.lockIcon,
       visibilityOffIcon: widget.visibilityOffIcon,
       labelText: messages.passwordHint,
       autofillHints: _isSubmitting
