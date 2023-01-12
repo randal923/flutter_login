@@ -30,8 +30,8 @@ class TextFieldUtils {
   static Icon getPrefixIcon(
     LoginUserType userType,
     Icon? userIcon,
-    Icon? phoneIcon,
     Icon? emailIcon,
+    Icon? phoneIcon,
   ) {
     switch (userType) {
       case LoginUserType.name:
